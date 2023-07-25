@@ -49,8 +49,6 @@ body {
 }
 
 .temp-container {
-  /* border: 3px solid rgb(246, 5, 5); */
-
   display: grid;
   place-content: center;
 
@@ -73,9 +71,6 @@ body {
     width: 60%;
     margin: 5px !important;
   }
-  /* body {
-    background-color: blue;
-  } */
 }
 
 @media (max-width: 770px) {
@@ -86,9 +81,6 @@ body {
     width: 97%;
     margin: 5px !important;
   }
-  /* body {
-    background-color: green;
-  } */
 }
 
 @media (max-width: 426px) {
@@ -97,9 +89,6 @@ body {
     height: 90vh;
     font-size: 1.5rem;
   }
-  /* body {
-    background-color: red;
-  } */
 }
 
 /* Criado por Ruan Pablo Pionte"" */
