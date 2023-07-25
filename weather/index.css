@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,300;0,400;1,200;1,300;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: var(--font-color);
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+:root {
+  --bg-color: #5a5757;
+  --secundary-bg-color: rgba(217, 217, 217, 0.545);
+  --border-color: #3c3838;
+  --font-color: #ffffff;
+
+  --weather-bg: linear-gradient(
+    320deg,
+    hsla(54, 100%, 50%, 1) 16%,
+    hsla(201, 33%, 73%, 1) 41%
+  );
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.search-bar {
+  width: 20%;
+}
+
+.weather-container {
+  background: hsla(54, 100%, 50%, 1);
+  background: var(--weather-bg);
+  border: 5px solid var(--border-color);
+
+  height: 80vh;
+  width: 30vw;
+  border-radius: 2rem;
+
+  font-size: 2rem;
+}
+.bg-img {
+  border: 3px solid var(--border-color);
+  border-radius: 1rem 0 1rem 0;
+}
+.bg-trasparent {
+  background-color: var(--secundary-bg-color);
+}
+
+.temp-container {
+  /* border: 3px solid rgb(246, 5, 5); */
+
+  display: grid;
+  place-content: center;
+
+  height: 30%;
+}
+.temp {
+  font-size: 5rem;
+}
+
+.forcast-container {
+  font-size: 1rem;
+}
+
+@media (max-width: 1194px) {
+  .weather-container {
+    width: 50%;
+    height: 90vh;
+  }
+  .search-bar {
+    width: 60%;
+    margin: 5px !important;
+  }
+  /* body {
+    background-color: blue;
+  } */
+}
+
+@media (max-width: 770px) {
+  .weather-container {
+    width: 70%;
+  }
+  .search-bar {
+    width: 97%;
+    margin: 5px !important;
+  }
+  /* body {
+    background-color: green;
+  } */
+}
+
+@media (max-width: 426px) {
+  .weather-container {
+    width: 100%;
+    height: 90vh;
+    font-size: 1.5rem;
+  }
+  /* body {
+    background-color: red;
+  } */
+}
