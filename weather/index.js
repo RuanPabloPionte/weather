@@ -1,4 +1,4 @@
-const apiKey = "a644acb71edd489085a163645232107";
+const apiKey = "Your api key";
 
 const getHtmlElements = () => {
   const htmlElements = {
